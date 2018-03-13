@@ -35,7 +35,7 @@ apis:
   tags: Senders
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/senders/master/_listings/sendgrid/senders-sender-id-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/senders/master/_listings/sendgrid/senders-sender-id-get.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
