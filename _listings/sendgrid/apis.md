@@ -36,9 +36,9 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/senders/master/_listings/sendgrid/senders-sender-id-resend-verification-post.md
-- name: SendGrid Delete Senders Sender
+- name: SendGrid Get Senders Sender
   description: |-
-    **This endoint allows you to delete one of your sender identities.**
+    **This endpoint allows you to retrieve a specific sender identity.**
 
     Sender Identities are required to be verified before use. If your domain has been whitelabeled it will auto verify on creation. Otherwise an email will be sent to the `from.email`.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
@@ -47,9 +47,9 @@ apis:
   tags: Senders
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/senders/master/_listings/sendgrid/senders-sender-id-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/senders/master/_listings/sendgrid/senders-sender-id-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/senders/master/_listings/sendgrid/senders-sender-id-delete-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/senders/master/_listings/sendgrid/senders-sender-id-get-postman.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
