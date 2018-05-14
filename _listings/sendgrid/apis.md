@@ -36,20 +36,20 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/senders/master/_listings/sendgrid/senders-sender-id-resend-verification-post.md
-- name: SendGrid Patch Senders Sender
+- name: SendGrid Add Senders Sender  Resend Verification
   description: |-
-    **This endpoint allows you to update a sender identity.**
+    **This enpdoint allows you to resend a sender identity verification email.**
 
-    Updates to `from.email` require re-verification. If your domain has been whitelabeled it will auto verify on creation. Otherwise an email will be sent to the `from.email`.
-
-    Partial updates are allowed, but fields that are marked as "required" in the POST (create) endpoint must not be nil if that field is included in the PATCH request.
+    Sender Identities are required to be verified before use. If your domain has been whitelabeled it will auto verify on creation. Otherwise an email will be sent to the `from.email`.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
   humanURL: https://sendgrid.com/
   baseURL: https://api.sendgrid.com//v3
   tags: Senders
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/senders/master/_listings/sendgrid/senders-sender-id-patch.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/senders/master/_listings/sendgrid/senders-sender-id-resend-verification-post.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/senders/master/_listings/sendgrid/senders-sender-id-resend-verification-post-postman.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
